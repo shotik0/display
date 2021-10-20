@@ -72,6 +72,13 @@ body{
     top: 0;
     left: 0;
     width: 100%;
+    transition: .2s linear;
+    padding-bottom: 40px;
+    z-index: 999;
+}
+.header_active{
+    background-color: #0E1D28;
+    opacity: .3;
 }
 .header__wrapper{
     display: flex;
@@ -306,7 +313,7 @@ body{
     object-fit: cover;
  }
 .tours{
-    margin-bottom: 139px;
+    margin-bottom: 100px;
 }
 .tours__tour{
     display: grid;
@@ -342,4 +349,128 @@ body{
 }
 .tour__info{
     padding-top: 30px;
+}
+.top{
+    margin-bottom:86px;
+}
+.top__title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 55px;
+}
+.top__card-stats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 83%;
+    background-color: rgba(21, 24, 36, 0.6);;
+    padding: 16px 25px;
+    justify-content: flex-end;
+}
+.top__card-pic{
+    position: relative;
+    margin-bottom: 35px;
+}
+.top__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+.top__card-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    margin: 0 auto 0 0;
+}
+.top__card-likes-value{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding-right: 15px;
+    background: url(../img/svg/love.svg) no-repeat right;
+    background-size: 13px;
+    margin-right: 15px;
+}
+.top__card-com-value{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding-right: 20px;
+    background: url(../img/svg/comment.svg) no-repeat right;
+    background-size: 13px;
+}
+.top__card-desc{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.top__card-more{
+    text-decoration: none;
+    color: white;
+    padding: 12px 19px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #1B7DFF;
+    border: 0;
+}
+.top__card-more:hover, .top__card-more:focus, .top__card-more:active{
+    background-color: #093978;
+}
+.video{
+    width: 100%;
+}
+.videos__wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+.video__item{
+    padding-top: 56.25%;
+}
+.video__element{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    background: #0E1D28;
+    padding: 80px 0;
+}
+.footer_menu-title{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+.footer_menu-link{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+}
+.footer_item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_logo{
+    width: 50%;
+}
+.footer_nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-between;
+}
+.footer_menu-link:hover, .footer_menu-link:focus, .footer_menu-link:active{
+    opacity: .75;
 }
